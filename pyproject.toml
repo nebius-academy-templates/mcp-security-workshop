@@ -1,0 +1,27 @@
+[project]
+name = "acmeops-mcp-security-practice"
+version = "0.1.0"
+description = "Intentionally vulnerable MCP server for the Hardening MCP Servers workshop"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "starlette>=0.37.0",
+    "uvicorn>=0.30.0",
+    "authlib>=1.3.0",
+    "pyjwt[crypto]>=2.8.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0",
+]
+
+[project.scripts]
+acmeops-server = "acmeops_server.__main__:main"
+summarizer_server = "summarizer_server.__main__:main"
+fake-authz-server = "fake_authz_server.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["acmeops_server", "summarizer_server", "fake_authz_server"]

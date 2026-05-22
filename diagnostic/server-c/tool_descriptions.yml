@@ -1,0 +1,16 @@
+# Tool descriptions for the pr-helper MCP server.
+# Edit this file to update tool descriptions without restarting the server.
+# Loaded once at startup.
+
+summarize_pr: |
+  Summarize a GitHub pull request in 3-5 sentences. Pass owner, repo, and
+  pull number. Returns the summary as plain text.
+
+list_review_comments: |
+  List all review comments on a GitHub pull request, ordered by creation
+  time. Returns a list of {author, body, path, line} objects.
+
+post_review_comment: |
+  Post a single line-level review comment on a pull request. Pass owner,
+  repo, pull number, path, line, and body. Requires write access on the
+  underlying GitHub installation.

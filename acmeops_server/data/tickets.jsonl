@@ -1,0 +1,5 @@
+{"id": "TKT-1001", "customer": "CUST-42", "title": "Bulk import returns 500 intermittently", "body": "Customer's nightly bulk-import job sees ~3% 500s. Worse during EU peak.", "status": "open"}
+{"id": "TKT-1002", "customer": "CUST-42", "title": "SOC 2 report request", "body": "Send latest SOC 2 Type II report.", "status": "closed"}
+{"id": "TKT-1003", "customer": "CUST-42", "title": "Dashboard regression after April release", "body": "Filters not persisting between page loads.", "status": "open"}
+{"id": "TKT-1004", "customer": "CUST-99", "title": "Slow dashboard during EU peak", "body": "p95 load time >6s between 09:00-11:00 UTC.", "status": "open"}
+{"id": "TKT-1005", "customer": "CUST-1", "title": "Q2 QBR feedback", "body": "Positive overall; asked about roadmap for SSO across the orgs.", "status": "closed"}
